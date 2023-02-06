@@ -71,9 +71,27 @@ public class Rectangle { //make public for CS A
         width = newWidth;
     }
 
+    /**
+     *  @description Modifies the height of the rectangle
+     * @param newHeight self-explanatory
+     */
+    public void setHeight(double newHeight) {
+        height = newHeight;
+    }
+
     //other methods
 
+    /**
+     * @description Calculates area of rectangle
+     * @return area of rectangle
+     */
+    public double calculateArea() {
+        return height*width;
+    }
 
+    public double calculatePerimeter() {
+        return ((width*2) + (height*2));
+    }
 
 
     //toString method
