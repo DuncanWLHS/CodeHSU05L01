@@ -93,7 +93,6 @@ public class Rectangle { //make public for CS A
         return ((width*2) + (height*2));
     }
 
-
     //toString method
     public String ToString() {
         DecimalFormat df = new DecimalFormat("#.##"); //displays a number with 2 decimal places
