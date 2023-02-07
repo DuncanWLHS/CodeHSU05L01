@@ -93,8 +93,19 @@ public class Rectangle { //make public for CS A
         return ((width*2) + (height*2));
     }
 
+    //resets the rectangle
+
+    /**
+     * @description resets rectangle to the original
+     * @param rect rectangle object you want to reset
+     */
+    public void resetRectangle(Rectangle rect) {
+        rect.width = 1;
+        rect.height = 1;
+    }
+
     //toString method
-    public String ToString() {
+    public String toString() {
         DecimalFormat df = new DecimalFormat("#.##"); //displays a number with 2 decimal places
         return "The height of the rectangle is " + df.format(height) + " and the width is " + df.format(width) + ".";
     }
